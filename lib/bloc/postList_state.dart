@@ -12,7 +12,8 @@ class LoadingState extends PostListState {}
 
 class SuccessState extends PostListState {
   List<Post> posts;
-
+  @override
+  List<Object?> get props => [posts];
   SuccessState({required this.posts});
 }
 
